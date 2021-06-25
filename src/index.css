@@ -1,13 +1,127 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   font-family: "Heebo", sans-serif;
+}
+svg {
+   background-color: #fbab7e;
+   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+   border-radius: 25px;
+   box-shadow: 0px 0px 45px -5px #fbab7e;
+   -webkit-box-shadow: 0px 0px 45px -5px #fbab7e;
+   -moz-box-shadow: 0px 0px 45px -5px #fbab7e;
+}
+.button {
+   background-image: linear-gradient(135deg, #d83a56 10%, #ff616d 100%);
+   border: none;
+   /* box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); */
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   transition: 1s;
+   line-height: 55px;
+}
+.taskInfo {
+   background-color: #fbab7e;
+   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+   border-radius: 25px;
+   box-shadow: 0px 0px 45px -5px #fbab7e;
+   -webkit-box-shadow: 0px 0px 45px -5px #fbab7e;
+   -moz-box-shadow: 0px 0px 45px -5px #fbab7e;
+   transition: 1s;
+}
+.taskInfo h6 {
+   font-size: 1.1rem;
+   line-height: 1.3;
+   letter-spacing: 0em;
+   font-style: normal;
+   font-weight: 500;
+}
+.alert-hidden {
+   width: 200px;
+   font-size: 0.8rem;
+   opacity: 0;
+   transition: linear 2s;
+   border: none;
+   border-radius: 10px;
+   background-image: linear-gradient(135deg, #42ff97 10%, #66de93 100%);
+   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.alert-shown {
+   width: 200px;
+   font-size: 0.8rem;
+   opacity: 1;
+   transition: linear 500ms;
+   border: none;
+   border-radius: 10px;
+   background-image: linear-gradient(135deg, #42ff97 10%, #66de93 100%);
+   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.GoalSettings_Container {
+   color: rgb(255, 255, 255);
+   background-color: rgb(77, 77, 77);
+   border-radius: 10px;
+}
+
+.GoalSettings_Container .GoalSettings_Title_Input {
+   border: none;
+   outline: none;
+   height: 40px;
+   padding: 10px;
+   caret-color: #28c76f;
+   color: white;
+   background-color: unset;
+   border-bottom: 3px solid rgb(175, 175, 175);
+   transition: linear 500ms;
+}
+.GoalSettings_Container .GoalSettings_Title_Input:focus {
+   border-bottom: 3px solid rgb(255, 255, 255);
+   background-color: rgb(107, 107, 107);
+   border-radius: 5px;
+}
+.GoalSettings_Container .Colors {
+   margin-left: -20px;
+}
+.GoalSettings_Container .Colors {
+   list-style-type: none;
+}
+.GoalSettings_Container .Colors li {
+   float: left;
+   margin-right: 10px;
+   border-radius: 50%;
+}
+.GoalSettings_Container .Colors .color {
+   cursor: pointer;
+   height: 25px;
+   width: 25px;
+}
+.GoalSettings_Container div .Text_Aria {
+   border: none;
+   outline: none;
+   color: white;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #424242;
+   caret-color: #28c76f;
+}
+.GoalSettings_Container .Submit_Form .Start_Working {
+   color: white;
+   border: 3px solid #28c76f;
+   border-radius: 10px;
+}
+.GoalSettings_Container .Submit_Form .Start_Working:hover {
+   background-color: #28c76f;
+}
+.GoalSettings_Container .Submit_Form .cancel {
+   color: rgb(180, 180, 180);
 }
