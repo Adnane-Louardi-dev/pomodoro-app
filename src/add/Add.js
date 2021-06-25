@@ -1,19 +1,15 @@
 import React from "react";
-import History from "../History";
+import { Link } from "react-router-dom";
 import "./add.css";
 const Add = () => {
    return (
-      <div
-         className="float-right m-3 fixed-bottom  "
-         onClick={(e) => {
-            e.preventDefault();
-            History.push("/goalsettings");
-         }}
-      >
-         <a href="/" className="float">
-            <i className="fa fa-plus my-float"></i>
-         </a>
-      </div>
+      <Link to="/goalsettings">
+         <div className="float-right m-3 fixed-bottom  ">
+            <div className="float">
+               <i className="fa fa-plus my-float"></i>
+            </div>
+         </div>
+      </Link>
    );
 };
 
